@@ -176,54 +176,94 @@ nav {
             }
         }
     }
-
 }
 /*-- Termina Footer --*/
 
 
 /*-- Inicia Responsive --*/
 @media screen and (max-width: 1120px) {
-    nav {
-        height: 85px;
-        .enlace {
-            padding: 10px 10px;
-            .logo {
-                height: 65px;
+    .contenedor {
+        grid-template-areas: "nav nav nav" 
+        "cover cover cover" 
+        "main main main" 
+        "misc misc misc" 
+        "footer footer footer";
+        font-size: 65%;
+
+        nav {
+            height: 85px;
+            .enlace {
+                padding: 10px 10px;
+                .logo {
+                    height: 65px;
+                }
             }
-        }
-        ul {
-            li {
-                line-height: 80px;
-                a {
-                    font-size: 18px;
+            ul {
+                li {
+                    line-height: 80px;
+                    a {
+                        font-size: 18px;
+                    }
                 }
             }
         }
-    }
 
-    .foot {
-        height: 85px;
-        .enlace-foot {
-            padding: 15px 15px ;
-            .logo-foot {
-                height: 50px;
+        .indxEquipo {
+            margin: 0;
+            padding: 0;
+            h2 {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            img {
+                width: 250px;
+                margin: 0;
+                margin-bottom: 50px;
+                padding: 0;
             }
         }
-        .copyright {
-            font-size: 14px;
-        }
-        ul {
-            margin-right: 75px;
+
+        .indxEspc {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            h2 {
+                margin: 0;
+                padding: 0;
+            }
             li {
-                display: inline-block;
-                line-height: 85px;
-                a {
-                    font-size: 25px;
+                text-align: center;
+                margin: auto;
+            }
+        }
+    
+        .foot {
+            height: 85px;
+            .enlace-foot {
+                padding: 15px 15px ;
+                .logo-foot {
+                    height: 50px;
+                }
+            }
+            .copyright {
+                font-size: 14px;
+            }
+            ul {
+                margin-right: 35px;
+                li {
+                    display: inline-block;
+                    line-height: 80px;
+                    a {
+                        font-size: 25px;
+                    }
                 }
             }
         }
     }
 }
+
 
 
 @media screen and (max-width: 858px) {
