@@ -53,9 +53,24 @@
         .indxEquipo {
             width: 95%;
             img {
-                width: 250px;
+                width: 215px;
                 margin: 45px 0;
                 padding: 0;
+            }
+        }
+        .indxEspc {
+            h2 {
+                font-size: 28px;
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                li {
+                    width: 75%;
+                    span {
+                        font-size: 18px;
+                    }
+                }
             }
         }
         /*--Termina Resp-Sml-IndEq--*/

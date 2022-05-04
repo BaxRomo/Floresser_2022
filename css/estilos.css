@@ -92,7 +92,7 @@ nav {
     font-size: 35px;
     padding-left: 135px; }
   .indxEquipo img {
-    width: 400px;
+    width: 300px;
     padding: 10px;
     opacity: 85%;
     margin-bottom: 15px; }
@@ -110,13 +110,13 @@ nav {
     width: 100%;
     font-size: 30px; }
   .indxEspc li {
-    margin-top: 15px;
-    padding-left: 75px;
+    margin-top: 5px;
     width: 65%;
-    font-size: 18px;
     color: #212121;
-    padding: 25px;
+    padding: 15px;
     border-bottom: 2.2px solid #EAACA4; }
+    .indxEspc li span {
+      font-size: 22px; }
 
 /*-- Termina Seccion Index Especialidades --*/
 /*-- Inicia Seccion Nosotros --*/
@@ -300,7 +300,7 @@ nav {
       margin: 0;
       padding: 0; }
       .contenedor .indxEquipo img {
-        width: 300px;
+        width: 275px;
         padding-bottom: 50px; }
       .contenedor .indxEquipo h1 {
         margin: 0;
@@ -309,7 +309,7 @@ nav {
     .contenedor .indxEspc {
       padding: 0;
       margin: 0;
-      margin-bottom: 20px;
+      margin-bottom: 55px;
       text-align: center; }
       .contenedor .indxEspc h2 {
         font-size: 35px;
@@ -317,7 +317,9 @@ nav {
         padding: 0; }
       .contenedor .indxEspc li {
         text-align: center;
-        margin: auto; }
+        font-size: 10px;
+        margin: auto;
+        width: 35%; }
     .contenedor .nosotros {
       margin: 0 auto; }
       .contenedor .nosotros .mision, .contenedor .nosotros .vision, .contenedor .nosotros .valores {
@@ -426,9 +428,17 @@ nav {
     .contenedor .indxEquipo {
       width: 95%; }
       .contenedor .indxEquipo img {
-        width: 250px;
+        width: 215px;
         margin: 45px 0;
         padding: 0; }
+    .contenedor .indxEspc h2 {
+      font-size: 28px;
+      margin: 0;
+      padding: 0; }
+    .contenedor .indxEspc ul li {
+      width: 75%; }
+      .contenedor .indxEspc ul li span {
+        font-size: 18px; }
     .contenedor .nosotros {
       display: flex;
       flex-direction: column;
