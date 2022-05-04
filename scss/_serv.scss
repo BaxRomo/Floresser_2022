@@ -1,0 +1,32 @@
+@import "vars";
+/*--Inicia Section Servicios --*/
+.servicios {
+    grid-column: span 3;
+    margin: 10px 85px;
+    margin-bottom: 35px; 
+    .especialidades {
+        h2{
+            font-size: $sizeh2;
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            td {
+                padding: 10px;
+                background-color: $color-salmon;
+                opacity: 65%;
+                font-size: 28px;
+                text-align: center;
+                color: $alltxt;
+                border-radius: .3rem;
+                &:hover {
+                    opacity: 100%
+                }
+            }
+        }
+    }
+}
+/*--Termina Section Servicios --*/

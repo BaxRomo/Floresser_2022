@@ -1,0 +1,30 @@
+/*-- Inicia Portada --*/
+.portada{
+    grid-area: cover;
+    background-color: white;
+    img {
+        width: 100%;
+    }
+    .optCover {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -55px;
+        margin-bottom: -2%;
+        li {
+            background-color: #212121;
+            text-align: center;
+            width: 400px;
+            display: inline-block;
+            padding: 1.5%;
+            a {
+                font-size: 28px;
+                color: white;
+                &:hover {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+/*-- Termina Portada --*/

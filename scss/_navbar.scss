@@ -1,0 +1,45 @@
+/*-- Inicia Head-Nav --*/
+nav {
+    grid-area: nav;
+    background-color: #212121;
+    height: 130px;
+    width: 100%;
+    .enlace {
+        position: absolute;
+        padding: 15px 15px;
+        .logo {
+            height: 100px;
+        }
+    }
+    ul {
+        float: right;
+        margin-right: 100px;
+        li {
+            display: inline-block;
+            line-height: 126px;
+            margin: 0 5px;
+            a {
+                color: white;
+                font-size: 30px;
+                padding: 7px 13px;
+                &:hover{
+                    font-weight: 500;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 120px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check {
+        display: none;
+    }
+}
+/*-- Termina Head-Nav --*/

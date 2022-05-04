@@ -1,0 +1,160 @@
+/*-- Inicia Responsive --*/
+@media screen and (max-width: 1350px) {
+    .contenedor {
+        grid-template-areas: "nav nav nav" 
+        "cover cover cover" 
+        "main main main" 
+        "misc misc misc" 
+        "footer footer footer";
+        font-size: 65%;
+        /*--Inicia Resp-Med-NavBar--*/
+        nav {
+            height: 85px;
+            .enlace {
+                padding: 10px 10px;
+                .logo {
+                    height: 65px;
+                }
+            }
+            ul {
+                li {
+                    line-height: 80px;
+                    a {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        /*--Termina Resp-Med-NavBar--*/
+        /*--Inicia Resp-Med-Cover--*/
+        .portada {
+            .optCover {
+                li a {
+                    font-size: 26px;
+                }
+            }
+        }
+        /*--Termina Resp-Med-Cover--*/
+        /*--Inicia Resp-Med-IndEq--*/
+        .indxEquipo {
+            margin: 0;
+            padding: 0;
+            img {
+                width: 300px;
+                padding-bottom: 50px;
+            }
+            h1 {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+        }
+        .indxEspc {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            h2 {
+                font-size: 35px;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                text-align: center;
+                margin: auto;
+            }
+        }
+        /*--Termina Resp-Med-IndEq--*/
+        /*--Inicia Resp-Med-Nos--*/
+        .nosotros {
+            margin: 0 auto;
+            .mision, .vision, .valores {
+                width: 45%;
+                margin: 25px auto;
+                h2 {
+                    font-size: 25px;
+                    padding: 10px 0;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        /*--Termina Resp-Med-Nos--*/
+        /*--Inicia Resp-Med-Serv--*/
+        .servicios {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 75px;
+            .especialidades {
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                }
+                h2 {
+                    font-size: 25px;
+                }
+                table {
+                    display: flex;
+                    justify-content: center;
+                    margin: 25px auto;
+                    width: 90%;
+                    td {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        /*--Termina Resp-Med-Serv--*/
+        /*--Inicia Resp-Med-Fot--*/
+        .foot {
+            height: 85px;
+            .enlace-foot {
+                padding: 15px 15px ;
+                .logo-foot {
+                    height: 50px;
+                }
+            }
+            .copyright {
+                font-size: 18px;
+            }
+            ul {
+                margin-right: 35px;
+                li {
+                    display: inline-block;
+                    line-height: 80px;
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        /*--Termina Resp-Med-Fot--*/
+        /*--Inicia Resp-Med-Cont--*/
+        .ubicacion {
+            width: 90%;
+            margin: 45px auto;
+            h2 {
+                font-size: $sizeh2;
+                text-align: center;
+            }
+            li {
+                display: inline;
+                text-align: left;
+                span {
+                    font-size: 100%;
+                    font-weight: 600;
+                } 
+            }
+            iframe {
+                margin-top: 25px;
+                width: 90%;
+            }
+        }
+        .contacto {
+            margin: 0 auto;
+            width: 90%;
+        } 
+        /*--Inicia Resp-Med-Cont--*/
+    }
+}

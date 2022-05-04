@@ -1,0 +1,36 @@
+/*-- Inicia Footer --*/
+.foot {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    height: 110px;
+    width: 100%;
+    .enlace-foot {
+        padding: 15px 15px;
+        .logo-foot {
+            display: inline-block;
+            height: 75px;
+        }
+    }
+    .copyright {
+        display: inline-block;
+        align-self: center;
+        font-weight: 300;
+        text-align: center;
+        color: white;
+    }
+    ul {
+        display: inline-block;
+        margin-right: 75px;
+        li {
+            display: inline-block;
+            line-height: 110px;
+            a {
+                color: white;
+                padding: 7px 13px;
+            }
+        }
+    }
+}
+/*-- Termina Footer --*/

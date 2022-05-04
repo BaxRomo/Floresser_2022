@@ -1,0 +1,23 @@
+@import "vars";
+/*-- Inicia Seccion Nosotros --*/
+.nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    grid-column: span 3;
+    text-align: justify;
+    h2{
+        text-align: center;
+        font-size: $sizeh2;
+        padding: 10px 0;
+    }
+    img {
+        width: 100%;
+    }
+    .mision, .vision, .valores {
+        padding: 20px 20px;
+        width: 400px;
+    }
+}
+/*-- Termina Seccion Nosotros --*/
