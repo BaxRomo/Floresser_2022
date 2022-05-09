@@ -8,15 +8,15 @@
     grid-column: span 3;
     text-align: justify;
     h2{
+        @include titulos ($h2, 500);
         text-align: center;
-        font-size: $sizeh2;
         padding: 10px 0;
     }
     img {
         width: 100%;
     }
     .mision, .vision, .valores {
-        padding: 20px 20px;
+        @include texto ($txt3, 400);
         width: 400px;
     }
 }

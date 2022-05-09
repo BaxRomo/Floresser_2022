@@ -1,5 +1,5 @@
 /*-- Inicia Responsive --*/
-@media screen and (max-width: 958px) {
+@media screen and (max-width: 1300px) {
     .contenedor {
         grid-template-areas: "nav nav nav" 
         "cover cover cover" 
@@ -135,14 +135,13 @@
         /*--Inicia Resp-Med-Cont--*/
         .ubicacion {
             width: 90%;
-            margin: 45px auto;
             h2 {
-                font-size: $sizeh2;
+                font-size: $h2;
                 text-align: center;
             }
             li {
                 display: inline;
-                text-align: left;
+                text-align: center;
                 span {
                     font-size: 100%;
                     font-weight: 600;
@@ -150,12 +149,14 @@
             }
             iframe {
                 margin-top: 25px;
-                width: 90%;
+                margin-bottom: 100px;
+
             }
         }
         .contacto {
-            margin: 0 auto;
-            width: 90%;
+            margin-left: 45px;
+            margin-bottom: 50px;
+            width: 100%;
         } 
         /*--Inicia Resp-Med-Cont--*/
     }

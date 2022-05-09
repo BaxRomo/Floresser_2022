@@ -1,5 +1,47 @@
-$color-salmon: #EAACA4;
-$alltxt: #212121;
-$sizeh1: 35px;
-$sizeh2: 30px;
-$sizeg: 18px;
+$h1: 65px;
+$h2: 45px;
+$h3: 40px;
+$h4: 33px;
+$txt1: 24px;
+$txt2: 18px;
+$txt3: 16px;
+$txt4: 14px;
+$layout-padding: 20px 10px;
+$color-primario: #212121;
+$color-secundario: #EAACA4;
+$border-form: 2px groove $color-secundario;
+
+@mixin titulos ($fsize, $fweight) {
+    font-size: $fsize;
+    font-weight: $fweight;
+    margin: 15px 0;
+}
+
+@mixin texto ($fsize, $fweight) {
+    font-size: $fsize;
+    font-weight: $fweight;
+    line-height: 1.7em;
+    margin: 0;
+}
+
+@mixin equipos ($isize) {
+    width: $isize;
+    opacity: 95%;
+    padding-top: 25px;
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+@mixin misvisval ($width, $width2) {
+    width: $width;
+    h2{
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    img {
+        width: $width2;
+    }
+}

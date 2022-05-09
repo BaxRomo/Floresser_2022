@@ -10,7 +10,7 @@
     margin: 45px auto;
     h1 {
         width: 100%;
-        font-size: $sizeh1;
+        @include titulos ($h2, 500);
         padding-left: 135px;
     }
     img {
@@ -30,9 +30,10 @@
     background-color: white;
     margin-bottom: 45px;
     h2 {
+        @include titulos ($h2, 500);
         margin-top: 120px;
         width: 100%;
-        font-size: $sizeh2
+        
     }
     li {
         margin-top: 5px;

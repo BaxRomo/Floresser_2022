@@ -4,75 +4,75 @@
     grid-area: main;
     display: flex;
     justify-content: center;
-}
 
-.ubicacion {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    h2 {
-        padding-bottom: 10px;
-        font-size: $sizeh2;
-    }
-    li {
-        display: inline;
-        text-align: left;
-        background-color: white;
-        width: 90%;
-        font-size: 18px;
-        text-align: left;
-        span {
-            font-size: 100%;
-            font-weight: 600;
-        } 
-    }
-    iframe {
-        width: 100%;
-        margin-top: 25px;
+    .ubicacion {
+        margin: 0 auto;
+        h2 {
+            @include titulos ($h2, 500);
+        }
+        li {
+            @include texto ($txt2, 400);
+            display: inline;
+            text-align: left;
+            background-color: white;
+            width: 90%;
+            text-align: left;
+            span {
+                @include texto ($txt2, 600)
+            } 
+        }
+        iframe {
+            width: 100%;
+            margin-top: 25px;
+        }
     }
 }
 
-.formulario {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    background-color: $color-salmon;
-    padding: 25px;
-    width: 90%;
-    h2 {
-        font-size: $sizeh2;
-        padding-bottom: 15px;
-    }
-    input {
-        width: 100%;
-        margin-bottom: 10px;
-        font-size: 15px;
-    }
-}
-
-.controlFormulario {
-    margin: 5px;
-    height: 35px;
-    padding: 15px; 
-    background-color: white;
-    opacity: 65%;
-}
-  
-.mensaje {
-    margin: 5px;
-    height: 250px;
-    padding: 15px;
-    resize: none; 
-    background-color: white;
-    opacity: 65%;
-}
-  
-.controlBoton {
-    width: 45%;
-    padding: 10px;
-    background-color: white;
-    display: inline-block;
-}
-  
- .contacto {
+.contacto {
     grid-area: misc; 
+    margin-bottom: 25px;
+    .formulario {
+        background-color: $color-secundario;
+        padding: 25px;
+        width: 90%;
+        
+        h2 {
+            font-size: $h2;
+            padding-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        .controlFormulario {
+            height: 35px;
+            background-color: white;
+            padding-left: 10px;
+            border: $border-form;
+            opacity: 65%;
+        }
+          
+        .mensaje {
+            display: block;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            padding: 10px;
+            resize: none; 
+            background-color: white;
+            border: $border-form;
+            opacity: 65%;
+        }
+          
+        .controlBoton {
+            width: 200px;
+            padding: 10px;
+            background-color: white;
+            border: $border-form;
+            opacity: 65%;
+            display: inline-block;
+        }
+    }
 }
 /*-- Termina Contacto --*/

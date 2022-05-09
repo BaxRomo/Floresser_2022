@@ -15,13 +15,13 @@
     }
     .copyright {
         display: inline-block;
+        @include texto ($txt2, 300);
         align-self: center;
-        font-size: 16stpx;
-        font-weight: 300;
         text-align: center;
         color: white;
     }
-    ul {
+
+    .redes-sociales {
         display: inline-block;
         margin-right: 75px;
         li {

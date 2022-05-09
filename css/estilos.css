@@ -20,7 +20,7 @@ nav {
       height: 100px; }
   nav ul {
     float: right;
-    margin-right: 100px; }
+    margin-right: 25px; }
     nav ul li {
       display: inline-block;
       line-height: 126px;
@@ -63,7 +63,6 @@ nav {
       display: inline-block;
       padding: 1.5%; }
       .portada .optCover li a {
-        font-size: 28px;
         color: white; }
         .portada .optCover li a:hover {
           font-weight: 500; }
@@ -89,7 +88,9 @@ nav {
   margin: 45px auto; }
   .indxEquipo h1 {
     width: 100%;
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: 500;
+    margin: 15px 0;
     padding-left: 135px; }
   .indxEquipo img {
     width: 300px;
@@ -106,9 +107,11 @@ nav {
   background-color: white;
   margin-bottom: 45px; }
   .indxEspc h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 15px 0;
     margin-top: 120px;
-    width: 100%;
-    font-size: 30px; }
+    width: 100%; }
   .indxEspc li {
     margin-top: 5px;
     width: 65%;
@@ -128,13 +131,18 @@ nav {
   grid-column: span 3;
   text-align: justify; }
   .nosotros h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 15px 0;
     text-align: center;
-    font-size: 30px;
     padding: 10px 0; }
   .nosotros img {
     width: 100%; }
   .nosotros .mision, .nosotros .vision, .nosotros .valores {
-    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7em;
+    margin: 0;
     width: 400px; }
 
 /*-- Termina Seccion Nosotros --*/
@@ -144,20 +152,27 @@ nav {
   margin: 10px 85px;
   margin-bottom: 35px; }
   .servicios .especialidades h2 {
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-    margin-top: 15px; }
+    font-size: 45px;
+    font-weight: 500;
+    margin: 15px 0;
+    text-align: center; }
+  .servicios .especialidades p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.7em;
+    margin: 0; }
   .servicios .especialidades table {
     width: 100%;
     margin: 20px 0; }
     .servicios .especialidades table td {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.7em;
+      margin: 0;
       padding: 10px;
       background-color: #EAACA4;
       opacity: 65%;
-      font-size: 28px;
       text-align: center;
-      color: #212121;
       border-radius: .3rem; }
       .servicios .especialidades table td:hover {
         opacity: 100%; }
@@ -175,64 +190,68 @@ nav {
   grid-area: main;
   display: flex;
   justify-content: center; }
-
-.ubicacion {
-  margin-top: 50px;
-  margin-bottom: 25px; }
-  .ubicacion h2 {
-    padding-bottom: 10px;
-    font-size: 30px; }
-  .ubicacion li {
-    display: inline;
-    text-align: left;
-    background-color: white;
-    width: 90%;
-    font-size: 18px;
-    text-align: left; }
-    .ubicacion li span {
-      font-size: 100%;
-      font-weight: 600; }
-  .ubicacion iframe {
-    width: 100%;
-    margin-top: 25px; }
-
-.formulario {
-  margin-top: 50px;
-  margin-bottom: 25px;
-  background-color: #EAACA4;
-  padding: 25px;
-  width: 90%; }
-  .formulario h2 {
-    font-size: 30px;
-    padding-bottom: 15px; }
-  .formulario input {
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 15px; }
-
-.controlFormulario {
-  margin: 5px;
-  height: 35px;
-  padding: 15px;
-  background-color: white;
-  opacity: 65%; }
-
-.mensaje {
-  margin: 5px;
-  height: 250px;
-  padding: 15px;
-  resize: none;
-  background-color: white;
-  opacity: 65%; }
-
-.controlBoton {
-  width: 45%;
-  padding: 10px;
-  background-color: white;
-  display: inline-block; }
+  .mapa .ubicacion {
+    margin: 0 auto; }
+    .mapa .ubicacion h2 {
+      font-size: 45px;
+      font-weight: 500;
+      margin: 15px 0; }
+    .mapa .ubicacion li {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.7em;
+      margin: 0;
+      display: inline;
+      text-align: left;
+      background-color: white;
+      width: 90%;
+      text-align: left; }
+      .mapa .ubicacion li span {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.7em;
+        margin: 0; }
+    .mapa .ubicacion iframe {
+      width: 100%;
+      margin-top: 25px; }
 
 .contacto {
-  grid-area: misc; }
+  grid-area: misc;
+  margin-bottom: 25px; }
+  .contacto .formulario {
+    background-color: #EAACA4;
+    padding: 25px;
+    width: 90%; }
+    .contacto .formulario h2 {
+      font-size: 45px;
+      padding-bottom: 15px; }
+    .contacto .formulario input {
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 15px; }
+    .contacto .formulario .controlFormulario {
+      height: 35px;
+      background-color: white;
+      padding-left: 10px;
+      border: 2px groove #EAACA4;
+      opacity: 65%; }
+    .contacto .formulario .mensaje {
+      display: block;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 10px;
+      padding: 10px;
+      resize: none;
+      background-color: white;
+      border: 2px groove #EAACA4;
+      opacity: 65%; }
+    .contacto .formulario .controlBoton {
+      width: 200px;
+      padding: 10px;
+      background-color: white;
+      border: 2px groove #EAACA4;
+      opacity: 65%;
+      display: inline-block; }
 
 /*-- Termina Contacto --*/
 /*-- Inicia Footer --*/
@@ -250,24 +269,26 @@ nav {
       height: 75px; }
   .foot .copyright {
     display: inline-block;
-    align-self: center;
-    font-size: 16stpx;
+    font-size: 18px;
     font-weight: 300;
+    line-height: 1.7em;
+    margin: 0;
+    align-self: center;
     text-align: center;
     color: white; }
-  .foot ul {
+  .foot .redes-sociales {
     display: inline-block;
     margin-right: 75px; }
-    .foot ul li {
+    .foot .redes-sociales li {
       display: inline-block;
       line-height: 110px; }
-      .foot ul li a {
+      .foot .redes-sociales li a {
         color: white;
         padding: 7px 13px; }
 
 /*-- Termina Footer --*/
 /*-- Inicia Responsive --*/
-@media screen and (max-width: 958px) {
+@media screen and (max-width: 1300px) {
   .contenedor {
     grid-template-areas: "nav nav nav"  "cover cover cover"  "main main main"  "misc misc misc"  "footer footer footer";
     font-size: 65%;
@@ -363,26 +384,26 @@ nav {
           .contenedor .foot ul li a {
             font-size: 25px; }
     .contenedor .ubicacion {
-      width: 90%;
-      margin: 45px auto; }
+      width: 90%; }
       .contenedor .ubicacion h2 {
-        font-size: 30px;
+        font-size: 45px;
         text-align: center; }
       .contenedor .ubicacion li {
         display: inline;
-        text-align: left; }
+        text-align: center; }
         .contenedor .ubicacion li span {
           font-size: 100%;
           font-weight: 600; }
       .contenedor .ubicacion iframe {
         margin-top: 25px;
-        width: 90%; }
+        margin-bottom: 100px; }
     .contenedor .contacto {
-      margin: 0 auto;
-      width: 90%; } }
+      margin-left: 45px;
+      margin-bottom: 50px;
+      width: 100%; } }
 
 /*-- Inicia Responsive Sml --*/
-@media screen and (max-width: 852px) {
+@media screen and (max-width: 1000px) {
   .contenedor {
     /*--Inicia Resp-Sml-NavBar--*/
     /*--Termina Resp-Sml-NavBar--*/
@@ -423,17 +444,23 @@ nav {
       left: 0;
       z-index: 1; }
     .contenedor .portada .optCover {
-      top: -50px; }
+      top: -45px; }
       .contenedor .portada .optCover li a {
-        font-size: 20px; }
+        font-size: 18px; }
     .contenedor .indxEquipo {
       width: 95%; }
+      .contenedor .indxEquipo h1 {
+        font-size: 40px;
+        font-weight: 500;
+        margin: 15px 0; }
       .contenedor .indxEquipo img {
-        width: 215px;
-        margin: 45px 0;
+        width: 125px;
+        margin: 25px 0;
         padding: 0; }
     .contenedor .indxEspc h2 {
-      font-size: 28px;
+      font-size: 40px;
+      font-weight: 500;
+      margin: 15px 0;
       margin: 0;
       padding: 0; }
     .contenedor .indxEspc ul li {
@@ -451,7 +478,8 @@ nav {
           font-size: 25px;
           padding: 10px 0; }
         .contenedor .nosotros .mision p, .contenedor .nosotros .vision p, .contenedor .nosotros .valores p {
-          font-size: 15px; }
+          font-size: 15px;
+          margin-bottom: 25px; }
     .contenedor .servicios {
       width: 90%;
       margin: 0 auto;
@@ -472,6 +500,8 @@ nav {
         width: 25%;
         line-height: 80px; }
         .contenedor .foot ul li a {
-          font-size: 20px; } }
+          font-size: 20px; }
+    .contenedor .contacto {
+      margin-left: 25px; } }
 
 /*-- Termina Responsive Sml --*/

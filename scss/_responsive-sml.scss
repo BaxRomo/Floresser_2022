@@ -1,5 +1,5 @@
 /*-- Inicia Responsive Sml --*/
-@media screen and (max-width: 852px) {
+@media screen and (max-width: 1000px) {
     .contenedor {
         /*--Inicia Resp-Sml-NavBar--*/
         nav {
@@ -42,9 +42,9 @@
         /*--Inicia Resp-Sml-Cover--*/
             .portada {
                 .optCover {
-                    top: -50px;
+                    top: -45px;
                     li a {
-                        font-size: 20px;
+                        font-size: $txt2;
                     }
                 }
             }
@@ -52,15 +52,18 @@
         /*--Inicia Resp-Sml-IndEq--*/
         .indxEquipo {
             width: 95%;
+            h1 {
+                @include titulos ($h3, 500);
+            }
             img {
-                width: 215px;
-                margin: 45px 0;
+                width: 125px;
+                margin: 25px 0;
                 padding: 0;
             }
         }
         .indxEspc {
             h2 {
-                font-size: 28px;
+                @include titulos ($h3, 500);
                 margin: 0;
                 padding: 0;
             }
@@ -89,6 +92,7 @@
                 }
                 p {
                     font-size: 15px;
+                    margin-bottom: 25px;
                 }
             }
         }
@@ -132,6 +136,13 @@
             }
         }
         /*--Termina Resp-Sml-Fot--*/
+
+        .contacto {
+            margin-left: 25px;
+        }
     }
 }
+
+
+
 /*-- Termina Responsive Sml --*/
