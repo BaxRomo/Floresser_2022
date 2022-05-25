@@ -54,7 +54,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: -55px;
+    top: -45px;
     margin-bottom: -2%; }
     .portada .optCover li {
       background-color: #212121;
@@ -90,13 +90,12 @@ nav {
     width: 100%;
     font-size: 45px;
     font-weight: 500;
-    margin: 15px 0;
+    margin: 0;
     padding-left: 135px; }
   .indxEquipo img {
     width: 300px;
-    padding: 10px;
-    opacity: 85%;
-    margin-bottom: 15px; }
+    opacity: 95%;
+    padding-top: 25px; }
     .indxEquipo img:hover {
       opacity: 100%; }
 
@@ -109,7 +108,7 @@ nav {
   .indxEspc h2 {
     font-size: 45px;
     font-weight: 500;
-    margin: 15px 0;
+    margin: 0;
     margin-top: 120px;
     width: 100%; }
   .indxEspc li {
@@ -117,7 +116,7 @@ nav {
     width: 65%;
     color: #212121;
     padding: 15px;
-    border-bottom: 2.2px solid #EAACA4; }
+    border-bottom: 2px groove #EAACA4; }
     .indxEspc li span {
       font-size: 22px; }
 
@@ -128,12 +127,11 @@ nav {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 50px 0;
-  grid-column: span 3;
-  text-align: justify; }
+  grid-column: span 3; }
   .nosotros h2 {
     font-size: 45px;
     font-weight: 500;
-    margin: 15px 0;
+    margin: 0;
     text-align: center;
     padding: 10px 0; }
   .nosotros img {
@@ -144,6 +142,8 @@ nav {
     line-height: 1.7em;
     margin: 0;
     width: 400px; }
+  .nosotros .valores_text p {
+    text-align: center; }
 
 /*-- Termina Seccion Nosotros --*/
 /*--Inicia Section Servicios --*/
@@ -154,7 +154,7 @@ nav {
   .servicios .especialidades h2 {
     font-size: 45px;
     font-weight: 500;
-    margin: 15px 0;
+    margin: 0;
     text-align: center; }
   .servicios .especialidades p {
     font-size: 24px;
@@ -195,7 +195,7 @@ nav {
     .mapa .ubicacion h2 {
       font-size: 45px;
       font-weight: 500;
-      margin: 15px 0; }
+      margin: 0; }
     .mapa .ubicacion li {
       font-size: 18px;
       font-weight: 400;
@@ -213,7 +213,9 @@ nav {
         margin: 0; }
     .mapa .ubicacion iframe {
       width: 100%;
-      margin-top: 25px; }
+      margin-top: 25px;
+      width: 100%;
+      height: 55%; }
 
 .contacto {
   grid-area: misc;
@@ -317,13 +319,17 @@ nav {
         .contenedor nav ul li a {
           font-size: 24px; }
     .contenedor .portada .optCover li a {
-      font-size: 26px; }
+      font-size: 24px; }
     .contenedor .indxEquipo {
       margin: 0;
       padding: 0; }
       .contenedor .indxEquipo img {
-        width: 275px;
-        padding-bottom: 50px; }
+        width: 250px;
+        opacity: 95%;
+        padding-top: 25px;
+        margin-bottom: 35px; }
+        .contenedor .indxEquipo img:hover {
+          opacity: 100%; }
       .contenedor .indxEquipo h1 {
         margin: 0;
         padding: 0;
@@ -348,26 +354,26 @@ nav {
         width: 45%;
         margin: 25px auto; }
         .contenedor .nosotros .mision h2, .contenedor .nosotros .vision h2, .contenedor .nosotros .valores h2 {
-          font-size: 25px;
+          font-size: 24px;
           padding: 10px 0; }
         .contenedor .nosotros .mision p, .contenedor .nosotros .vision p, .contenedor .nosotros .valores p {
-          font-size: 20px; }
+          font-size: 18px; }
     .contenedor .servicios {
       width: 90%;
       margin: 0 auto;
       padding-bottom: 75px; }
       .contenedor .servicios .especialidades p {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center; }
       .contenedor .servicios .especialidades h2 {
-        font-size: 25px; }
+        font-size: 33px; }
       .contenedor .servicios .especialidades table {
         display: flex;
         justify-content: center;
         margin: 25px auto;
         width: 90%; }
         .contenedor .servicios .especialidades table td {
-          font-size: 25px; }
+          font-size: 24px; }
     .contenedor .foot {
       height: 85px; }
       .contenedor .foot .enlace-foot {
@@ -392,15 +398,20 @@ nav {
         display: inline;
         text-align: center; }
         .contenedor .ubicacion li span {
-          font-size: 100%;
-          font-weight: 600; }
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 1.7em;
+          margin: 0; }
       .contenedor .ubicacion iframe {
-        margin-top: 25px;
-        margin-bottom: 100px; }
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+        margin: 25px 0; }
     .contenedor .contacto {
-      margin-left: 45px;
-      margin-bottom: 50px;
-      width: 100%; } }
+      display: flex;
+      justify-content: center;
+      margin-left: 10px; } }
 
 /*-- Inicia Responsive Sml --*/
 @media screen and (max-width: 1000px) {
@@ -452,7 +463,7 @@ nav {
       .contenedor .indxEquipo h1 {
         font-size: 40px;
         font-weight: 500;
-        margin: 15px 0; }
+        margin: 0; }
       .contenedor .indxEquipo img {
         width: 125px;
         margin: 25px 0;
@@ -460,7 +471,7 @@ nav {
     .contenedor .indxEspc h2 {
       font-size: 40px;
       font-weight: 500;
-      margin: 15px 0;
+      margin: 0;
       margin: 0;
       padding: 0; }
     .contenedor .indxEspc ul li {

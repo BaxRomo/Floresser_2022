@@ -6,6 +6,7 @@ $txt1: 24px;
 $txt2: 18px;
 $txt3: 16px;
 $txt4: 14px;
+$txt5: 10px;
 $layout-padding: 20px 10px;
 $color-primario: #212121;
 $color-secundario: #EAACA4;
@@ -14,7 +15,7 @@ $border-form: 2px groove $color-secundario;
 @mixin titulos ($fsize, $fweight) {
     font-size: $fsize;
     font-weight: $fweight;
-    margin: 15px 0;
+    margin: 0;
 }
 
 @mixin texto ($fsize, $fweight) {
@@ -33,15 +34,7 @@ $border-form: 2px groove $color-secundario;
     }
 }
 
-@mixin misvisval ($width, $width2) {
-    width: $width;
-    h2{
-        text-align: center;
-    }
-    p {
-        text-align: justify;
-    }
-    img {
-        width: $width2;
-    }
+
+@mixin marginsec ($msect) {
+    margin: $msect 0;
 }

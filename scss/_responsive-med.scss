@@ -30,7 +30,7 @@
         .portada {
             .optCover {
                 li a {
-                    font-size: 26px;
+                    font-size: $txt1;
                 }
             }
         }
@@ -40,8 +40,8 @@
             margin: 0;
             padding: 0;
             img {
-                width: 275px;
-                padding-bottom: 50px;
+                @include equipos (250px);
+                margin-bottom: 35px;
             }
             h1 {
                 margin: 0;
@@ -61,7 +61,7 @@
             }
             li {
                 text-align: center;
-                font-size: 10px;
+                font-size: $txt5;
                 margin: auto;
                 width: 35%;
             }
@@ -74,11 +74,11 @@
                 width: 45%;
                 margin: 25px auto;
                 h2 {
-                    font-size: 25px;
+                    font-size: $txt1;
                     padding: 10px 0;
                 }
                 p {
-                    font-size: 20px;
+                    font-size: $txt2;
                 }
             }
         }
@@ -90,11 +90,11 @@
             padding-bottom: 75px;
             .especialidades {
                 p {
-                    font-size: 20px;
+                    font-size: $txt2;
                     text-align: center;
                 }
                 h2 {
-                    font-size: 25px;
+                    font-size: $h4;
                 }
                 table {
                     display: flex;
@@ -102,7 +102,7 @@
                     margin: 25px auto;
                     width: 90%;
                     td {
-                        font-size: 25px;
+                        font-size: $txt1;
                     }
                 }
             }
@@ -143,21 +143,24 @@
                 display: inline;
                 text-align: center;
                 span {
-                    font-size: 100%;
-                    font-weight: 600;
+                    @include texto ($txt1, 600);
                 } 
             }
             iframe {
-                margin-top: 25px;
-                margin-bottom: 100px;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 150px;
+                @include marginsec (25px);
 
             }
         }
+
         .contacto {
-            margin-left: 45px;
-            margin-bottom: 50px;
-            width: 100%;
-        } 
+            display: flex;
+            justify-content: center;
+            margin-left: 10px;
+        }
         /*--Inicia Resp-Med-Cont--*/
     }
 }

@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     margin: 50px 0;
     grid-column: span 3;
-    text-align: justify;
+
     h2{
         @include titulos ($h2, 500);
         text-align: center;
@@ -18,6 +18,11 @@
     .mision, .vision, .valores {
         @include texto ($txt3, 400);
         width: 400px;
+    }
+    .valores_text {
+        p{
+            text-align: center;
+        }
     }
 }
 /*-- Termina Seccion Nosotros --*/

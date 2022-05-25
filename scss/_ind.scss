@@ -14,13 +14,7 @@
         padding-left: 135px;
     }
     img {
-        width: 300px;
-        padding: 10px;
-        opacity: 85%;
-        margin-bottom: 15px;
-        &:hover {
-            opacity: 100%;
-        }
+        @include equipos (300px);
     }
 }
 /*-- Termina Seccion Index Main --*/
@@ -40,7 +34,7 @@
         width: 65%;
         color: #212121;
         padding: 15px;
-        border-bottom: 2.2px solid #EAACA4;
+        border-bottom: $border-form;
         span {
             font-size: 22px;
         }
